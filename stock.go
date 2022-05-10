@@ -37,7 +37,7 @@ func getStock(s string, ch chan Stock) Stock{
 	req, _ := http.NewRequest("GET", api, nil);
 
 	req.Header.Add("X-RapidAPI-Host", "alpha-vantage.p.rapidapi.com")
-	req.Header.Add("X-RapidAPI-Key", "4d03f88e57msha2957900ed0414bp136955jsn98f06480b074")
+	req.Header.Add("X-RapidAPI-Key", "HERE PUT YOUR RAPIDAPI KEY")
 
 	res, err := http.DefaultClient.Do(req)
 
